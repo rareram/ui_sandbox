@@ -1,0 +1,5 @@
+{
+  "name": "TableDiff Enterprise",
+  "description": "Enterprise data comparison and synchronization platform featuring connection management, mapping wizards, discrepancy reporting, and repair tools.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,7 @@
+# Database connection info
+
+IP="192.168.56.101";
+PORT="1521";
+DBNAME="ORA19A";
+USERNAME="arkmgr";
+PASSWORD="BMX9PyH8+9Z9IkRs7vtlVw==";

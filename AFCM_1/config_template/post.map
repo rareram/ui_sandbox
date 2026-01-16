@@ -1,0 +1,5 @@
+source MAP SC_MOV.TEST01 to TG_MOV.TEST01
+TG_MOV.TEST01 {
+    EXCLUDE_DML (DELETE);
+    KEY_COLS (col1);
+};

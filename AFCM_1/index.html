@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFCM - Ark for CDC Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@xyflow/react@12.0.0/dist/style.css" rel="stylesheet" />
+    <!-- React Grid Layout Essential CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-grid-layout@1.5.0/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-resizable@3.0.5/css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #475569; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b; 
+      }
+      
+      /* React Flow Customizations */
+      .react-flow__node {
+        border: none;
+        background: transparent;
+      }
+      .react-flow__edge-path {
+        stroke-width: 2;
+      }
+
+      /* Grid Layout Customizations */
+      .react-grid-placeholder {
+        background: rgba(37, 99, 235, 0.1) !important;
+        border-radius: 0.75rem !important;
+        opacity: 0.5 !important;
+        z-index: 1 !important;
+      }
+
+      /* Visible Resize Handle */
+      .react-resizable-handle {
+        background: none !important;
+        width: 24px !important;
+        height: 24px !important;
+        bottom: 4px !important;
+        right: 4px !important;
+        z-index: 10 !important;
+      }
+      .react-resizable-handle::after {
+        content: "";
+        position: absolute;
+        right: 4px;
+        bottom: 4px;
+        width: 6px;
+        height: 6px;
+        border-right: 2px solid #94a3b8;
+        border-bottom: 2px solid #94a3b8;
+        transition: all 0.2s;
+      }
+      .dark .react-resizable-handle::after {
+        border-color: #475569;
+      }
+      .group:hover .react-resizable-handle::after {
+        border-color: #2563eb;
+        width: 10px;
+        height: 10px;
+      }
+    </style>
+</head>
+  <body class="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

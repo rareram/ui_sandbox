@@ -1,51 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="ko" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AFCM - Ark for CDC Manager</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@xyflow/react@12.0.0/dist/style.css" rel="stylesheet" />
     <!-- React Grid Layout Essential CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-grid-layout@1.5.0/css/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-resizable@3.0.5/css/styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
-            },
-            colors: {
-              primary: {
-                DEFAULT: '#2563eb', // blue-600
-                hover: '#1d4ed8',   // blue-700
-              },
-              slate: {
-                850: '#1e293b', // Custom dark shade
-                900: '#0f172a',
-                950: '#020617',
-              }
-            },
-            animation: {
-              'flow': 'flow 1.5s linear infinite',
-              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            },
-            keyframes: {
-              flow: {
-                '0%': { backgroundPosition: '0% 50%' },
-                '100%': { backgroundPosition: '100% 50%' },
-              }
-            }
-          }
-        }
-      }
-    </script>
     <style>
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
@@ -109,33 +74,6 @@
         height: 10px;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "recharts": "https://esm.sh/recharts@^3.6.0",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
-    "react-i18next": "https://esm.sh/react-i18next@^16.5.0",
-    "i18next": "https://esm.sh/i18next@^25.7.3",
-    "@monaco-editor/react": "https://esm.sh/@monaco-editor/react@^4.7.0",
-    "@xyflow/react": "https://esm.sh/@xyflow/react@12.0.0",
-    "react-dom": "https://esm.sh/react-dom@^19.2.3",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
-    "path": "https://esm.sh/path@^0.12.7",
-    "vite": "https://esm.sh/vite@^7.3.0",
-    "@mui/material": "https://esm.sh/@mui/material@5.15.11?external=react,react-dom",
-    "@mui/material/": "https://esm.sh/@mui/material@5.15.11&external=react,react-dom/",
-    "@emotion/react": "https://esm.sh/@emotion/react@11.11.3?external=react",
-    "@emotion/styled": "https://esm.sh/@emotion/styled@11.11.0?external=react,@emotion/react",
-    "react-grid-layout": "https://esm.sh/react-grid-layout@1.5.0?external=react,react-dom",
-    "lodash": "https://esm.sh/lodash@4.17.21"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
     <div id="root"></div>

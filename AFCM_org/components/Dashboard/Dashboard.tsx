@@ -383,7 +383,7 @@ const WidgetWrapper: React.FC<WidgetWrapperProps> = ({
           </button>
         </div>
       </div>
-      <div className="flex-1 relative overflow-hidden bg-white dark:bg-slate-850">
+      <div className="flex-1 relative overflow-hidden bg-white dark:bg-slate-850 min-h-0">
         {!isKPI && !isGlobalWidget && selectedIds.length === 0 ? (
           <div className="h-full flex flex-col items-center justify-center text-center p-6 bg-slate-50 dark:bg-slate-900/50">
             <Activity size={32} className="text-slate-300 dark:text-slate-700 mb-3" />
@@ -531,7 +531,7 @@ const RechartsWidget = ({ type, selectedIds }: { type: WidgetType, selectedIds: 
   };
   const handlePointClick = (id: string, payload: any) => { setDrillDown({ isOpen: true, viewType: getDrillType(), contextData: { id, time: payload?.time || '10:00' } }); };
   return (
-    <div className="h-full w-full p-4">
+    <div className="h-full w-full p-4 min-h-0 min-w-0">
       <ResponsiveContainer width="100%" height="100%">
         {isBar ? (
           <BarChart data={data}>
